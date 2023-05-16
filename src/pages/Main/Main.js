@@ -1,10 +1,12 @@
 import React from "react";
-import "./Main.css";
-//import logo from '../../assets/images/instagram.png' src기준 이미지 경로
+import "./Main.scss";
+import "../../styles/common.scss";
 
 function Main() {
   return (
-    <div>
+
+    <div className="page-main">
+
       <div className="body-top">
         <nav className="navbar">
           {/* 네비게이션 내용 */}
@@ -30,7 +32,7 @@ function Main() {
       </div>
 
       <div className="body-bottom">
-        <main className="main">
+        <main className="main-main">
           {/* 메인 콘텐츠 내용 */}
           <div className="main-feeds">
                 <div className="main-article-header">

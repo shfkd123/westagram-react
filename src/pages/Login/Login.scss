@@ -1,0 +1,64 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/common.scss";
+
+.page-login {
+    @include componentSize("", 100vh);
+    
+    .main-inner {
+        @include componentSize("", 100%);
+        background-color: #f1f3f5;
+        @include flexSort("", center, center);
+    }
+
+    .inner {
+        @include flexSort(column, space-around, center);
+        @include componentSize(350px, 380px);
+        padding: 10px 40px;
+        box-sizing: border-box;
+        background: white;
+        border: 1px solid #dbdbdb;
+    }
+
+    .disableBtn {
+        background-color: skyblue;
+        border-radius: 3px;
+        @include componentSize(100%, 30px);
+        border: none;
+    }
+    
+    .ableBtn {
+        background-color: #0e84d2;
+        border-radius: 3px;
+        @include componentSize(100%, 30px);
+        border: none;
+    }
+
+    .logintext {
+        color: white;
+    }
+
+    .inputBox {
+        display: block;
+        @include componentSize(270px, 20px);
+        padding: 8px;
+        border: 1px solid #dbdbdb;  opacity : 0.6;
+        border-radius: 3px;
+        margin-bottom: 5px;
+        
+    }
+    
+    #id, #psword {
+        border: none;
+        width: 100%;
+    }
+    
+    input:focus {outline: none;} 
+
+    .forget {
+        font-size: small;
+    }
+
+    .link {
+        text-decoration-line: none;
+    }
+}
